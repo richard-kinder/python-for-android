@@ -1,0 +1,19 @@
+diff -dur liblzma-orig/src/common/tuklib_integer.h liblzma/src/common/tuklib_integer.h
+--- liblzma-orig/src/common/tuklib_integer.h	2015-09-29 12:57:36.000000000 +0200
++++ liblzma/src/common/tuklib_integer.h	2016-07-18 09:20:50.869945772 +0200
+@@ -48,6 +48,7 @@
+ // Operating system specific features //
+ ////////////////////////////////////////
+ 
++#if 0
+ #if defined(HAVE_BYTESWAP_H)
+ 	// glibc, uClibc, dietlibc
+ #	include <byteswap.h>
+@@ -96,6 +97,7 @@
+ #		define conv64le(num) LE_64(num)
+ #	endif
+ #endif
++#endif
+ 
+ 
+ ///////////////////
